@@ -1,0 +1,11 @@
+.chat-room{
+    position: relative;
+    width: 400px;
+    margin: 20px;
+    display: inline-block;
+    padding: 0 10px 10px 10px;
+    box-shadow: 0 0 5px 0 black;
+}
+.chat-room h1{
+    text-align: center;
+}

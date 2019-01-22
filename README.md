@@ -1,68 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Проект был построен при помощи Create React App.
 
-## Available Scripts
+## Scripts
 
-In the project directory, you can run:
+Для запуска приложения в режиме разработки: `npm start`. Так же необходимо включить серверную часть для работы Socket.io (работает на 3001 порту)
+при помощи `npm run server`. 
 
-### `npm start`
+Включить проект в продакт режиме (работает на 3001 порту): `npm run start_production` 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Для сборки проекта: `npm run build` 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+##Описание проекта
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+При открытии страницы вам необходимо ввести свое имя. После чего вам разрешается создавать или 
+входить в комнаты. Для создания или входа в комнату нужно ввести её имя, которое не может состоять 
+ только из пробелов или быть пустой строкой (пробелы по бокам удаляются). Входить или создавать 
+ можно неограниченное количество раз.
+ Комната состоит из списка сообщений, строки ввода для отправки сообщения и списка пользователей этого чата.
+ У каждого пользователя в списке есть строка, с помощью которой можно пригласить его в какую-либо комнату.
+ При входе нового пользователя список пользователей обновляется.
+ При приглашении пользователя в какую-либо комнату у него появляется уведомление, принимая которое, создаётся
+ указанная комната.
+ 

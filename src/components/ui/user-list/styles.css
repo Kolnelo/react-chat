@@ -1,0 +1,31 @@
+.user-list{
+    margin-top: 20px;
+}
+
+.user-list-item{
+    margin: 1px;
+    padding: 10px 0;
+    border-top: 1px solid #a0a6ab;
+    border-bottom: 1px solid #a0a6ab;
+    word-wrap: break-word;
+}
+
+.user-list-title{
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.user-list-item:nth-of-type(n+2){
+
+}
+
+.user-list-empty{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.user-list-content{
+    height: 140px;
+    overflow-y: auto;
+}

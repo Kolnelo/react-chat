@@ -1,0 +1,18 @@
+.message-list{
+    height: 300px;
+    padding: 0;
+    overflow-y: auto;
+    list-style-type: none;
+}
+
+.message-list li:nth-child(odd){
+    background: rgb(196, 219, 255);
+}
+
+.message-list-item{
+    word-wrap: break-word;
+}
+
+.message-list-date{
+    color: hsla(220,8%,51%,.6);
+}
